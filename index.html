@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="card">
+            <div class="adicionar">
+                <img class="adicionar__imagem" src="/img/paper bag with groceries 1.svg" alt="Imagem de uma sacola com alimentos dentro"/>
+                <form>
+                    <input id="input-item" type="search" name="pesquisa" placeholder="Digite o item que deseja adicionar"/>
+                    <button id="adicionar-botao">Salvar item</button>
+                </form>
+            </div>
+            <div class="lista">
+                <h2 class="lista__titulo">Lista de Compras</h2>
+                <hr/>
+                <ul id="lista-de-compras">
+                    <p id="mensagem-lista-vazia" style="display: block;" class="lista-de-compras__texto">Sua lista está vazia. Adicione itens a ela para não esquecer de nada na próxima compra!</p>
+                </ul>
+
+                <ul id="lista-comprados">
+                    <h2 style="display: none;" id="titulo-lista-comprado">comprados<hr /></h2>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
